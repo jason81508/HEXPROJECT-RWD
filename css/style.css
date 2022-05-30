@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&family=Prompt:wght@200&family=Roboto+Flex:opsz,wght@8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&family=Prompt:wght@200&family=Roboto+Flex:opsz,wght@8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700&family=Roboto:ital,wght@0,400;1,300&display=swap');
+
 
 :root {
     --bg-black-900:#f2f2fc;
@@ -14,7 +16,8 @@
 body {
     line-height: 1.5;
     font-size: 16px;
-    /* font-family: 'Roboto Flex', sans-serif; */
+    font-family: 'Roboto Flex', sans-serif;
+    background-color: #efe9e7;
 }
 .main-container {
     max-width: 1024px;
@@ -62,7 +65,6 @@ body {
 }
 .header .nav li a:hover {
     color: #fff;
-    background-color: #3d1101;
 }
 .header .nav li i {
     margin-left:5px;
@@ -291,6 +293,386 @@ body {
     padding: 6px 20px;
     border: none;
     cursor: pointer;
+}
+/* CONTENT-WRAP ORDER-CART */
+.order-cart {
+    background-color: #efe9e7;
+    padding: 50px 0px;
+}
+.order-cart .order-type {
+    width: 25%;
+    margin-left:5%;
+}
+.order-cart .order-type .type-title h3 {
+    font-size: 20px;
+    line-height: 32px;
+    margin-bottom: 16px;
+    color: #3d1101;
+    font-weight: 600;
+}
+.order-cart .order-type .type-list a {
+    width: 80%;
+    display: block;
+    margin-bottom: 5px;
+    color: #3d1101;
+    text-decoration: none;
+    line-height: 32px;
+    border-bottom:1px solid #3d1101;
+    transition: .3s;
+}
+.order-cart .order-type .type-list a:hover {
+    background-color: #3d1101;
+    color: #fff;
+    padding-left: 8px;
+}
+.order-cart .order-list {
+    width: 70%;
+}
+.order-cart .order-list .list-title {
+    display: flex;
+}
+.order-cart .order-list .list-title .list-search {
+    width: 80%;
+    position: relative;
+}
+.order-cart .order-list .list-title .list-search input[type=search] {
+    width: 75%;
+    border: 2px solid #3d1101;
+    background-color: rgba(0,0,0,0);
+    padding: 5px;
+    transition: .3s;
+}
+.order-cart .order-list .list-title .list-search input[type=search]:focus {
+    background-color: #fff;
+}
+.order-cart .order-list .list-title .list-search a {
+    background-color: #3d1101;
+    color: #fff;
+    padding: 2.5px 5px;
+    position: absolute;
+}
+.order-cart .order-list .list-title .list-buy {
+    width: 20%;
+}
+.order-cart .order-list .list-title .list-buy span {
+    font-size: 16px;
+    color: #3d1101;
+    position: relative;
+    margin-right:32px ;
+}
+.order-cart .order-list .list-title .list-buy span::after {
+    content: '';
+    height: 14px;
+    width: 1px;
+    position: absolute;
+    top: 3px;
+    right: -15px;
+    background-color: #3d1101;
+}
+.order-cart .order-list .list-title .list-buy a {
+    font-size: 25px;
+    color: #3d1101;
+    position: relative;
+}
+.order-cart .order-list .list-title .list-buy a::after {
+    content: '1';
+    font-size: 12px;
+    border-radius: 50%;
+    position: absolute;
+    padding: 1px 6px;
+    right: -10px;
+    background-color: #ff5e45;
+    color: #fff;
+}
+.order-cart .order-list .list-info {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.order-cart .order-list .list-info .list-item {
+    width: 30%;
+    margin: 3.33% 3.33% 3.33% 0%;
+    text-align: center;
+    position: relative;
+    background: #EFE9E7;
+    box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.16);
+}
+.order-cart .order-list .list-info .list-item .heart {
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    top: 5px;
+    left: 15px;
+    overflow: hidden;
+}
+.order-cart .order-list .list-info .list-item .tag {
+    overflow: hidden;
+    width: 80px;
+    height:80px;
+    position: absolute;
+    top: -6px;
+    right: -6px;
+}
+.order-cart .order-list .list-info .list-item .tag::before {
+    content: '';
+    position: absolute;
+    border-bottom:6px solid #029e77;
+    border-left: 6px solid transparent;
+    border-right:6px solid transparent;
+    left: 3px;
+}
+.order-cart .order-list .list-info .list-item .tag::after {
+    content: '';
+    position: absolute;
+    border-top:6px solid transparent;
+    border-left: 6px solid #029e77;
+    border-right:6px solid transparent;
+    bottom: 9px;
+    right: -6px;
+}
+.order-cart .order-list .list-info .list-item .tag span {
+    position: absolute;
+    top: 5px;
+    right: -30px;
+    transform: rotate(45deg);
+    width: 120px;
+    height: 20px;
+    line-height: 21px;
+    background-color: #0c9;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+}
+.order-cart .order-list .list-info .list-item h4 {
+    font-size: 20px;
+    color: #3d1101;
+    margin-top: 11px;
+}
+.order-cart .order-list .list-info .list-item h5 {
+    font-size: 12px;
+    color: #3d1101;
+    margin-bottom: 20px;
+    position: relative;
+}
+.order-cart .order-list .list-info .list-item h5::before {
+    content: '';
+    position: absolute;
+    width: 91px;
+    height: 1px;
+    bottom: -8px;
+    left: 65px;
+    background-color: #3d1101;
+}
+.order-cart .order-list .list-info .list-item p {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    color: #3d1101;
+    font-weight: 600;
+    margin-bottom: 13px;
+}
+.order-cart .order-list .list-info .list-item .button-order {
+    margin-bottom: 20px;
+}
+.order-cart .order-list .list-info .list-item .button-order .order {
+    font-size: 16px;
+    text-decoration: none;
+    color: #ff5e45;
+    border: 2px solid #ff5e45;
+    border-radius: 3px;
+    padding: 4px 40px;
+    margin-bottom: 14px;
+    transition: .3s;
+}
+.order-cart .order-list .list-info .list-item .button-order .order:hover {
+    background-color: #ff5e45;
+    color: #fff;
+}
+.order-cart .order-list .list-info .list-item .button-order .order i {
+    margin-right: 2px;
+}
+/* CONTENT-WRAP LOGIN */
+.login {
+    background-color: #efe9e7;
+    padding: 50px 0px;
+}
+.login .row {
+    justify-content: center;
+    align-items: center;
+}
+.login .login-title {
+    text-align: center;
+}
+.login .login-title h3{
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 32px;
+    color: #3d1101;
+}
+.login .login-title h4{
+    font-size: 20px;
+    font-weight: 900;
+    margin-top: 5px;
+    color:#3d1101;
+}
+.login .login-form {
+    background: #EFE9E7;
+    box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.16);
+    border-top: 5px solid #ff5e45;
+    padding: 12px 15px;
+    margin-top: 35px;
+}
+.login .login-form h5{
+   font-size: 18px;
+   font-weight: 900;
+   color: #3d1101;
+}
+.login .login-form .login-mail, .login-password {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    position: relative;
+    margin-top: 12px;
+}
+.login .login-form .login-mail .email, .login-password .password {
+    padding: 6px 0px 6px 24px;
+    border-radius: 3px;
+    border: none;
+}
+.login .login-form .login-mail label, .login-password label {
+    font-size: 16px;
+    color: #3d1101;
+}
+.login .login-form .login-mail i, .login-password i {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    color: rgba(61,17,0,0.50);
+}
+.login .login-form .login-forgive{
+    text-align: left;
+}
+.login .login-form .login-forgive a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #ff5e45;
+}
+.login .login-form .login-forgive a:hover{
+    color: #3d1101;
+}
+.login .login-form .login-button {
+    margin-top: 12px;
+}
+.login .login-form .login-button input {
+    font-size: 14px;
+    color: #fff;
+    border-radius: 3px;
+    border: none;
+}
+.login .login-form .login-button input[type=button] {
+    background-color: rgba(0,0,0,0.35);
+    padding: 6px 48px;
+    margin-right: 20px;
+}
+.login .login-form .login-button input[type=submit] {
+    background-color: #ff5e45;
+    padding: 6px 48px;
+}
+/* CONTENT-WRAP REGISTER */
+.register {
+    background-color: #efe9e7;
+    padding: 50px 0px;
+}
+.register .row {
+    justify-content: center;
+    align-items: center;
+}
+.register .register-title {
+    text-align: center;
+}
+.register .register-title h3{
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 32px;
+    color: #3d1101;
+}
+.register .register-title h4{
+    font-size: 20px;
+    font-weight: 900;
+    margin-top: 5px;
+    color:#3d1101;
+}
+.register .register-form {
+    width: 70%;
+    margin: 0 auto;
+    background: #EFE9E7;
+    box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.16);
+    border-top: 5px solid #ff5e45;
+    padding: 12px 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 35px;
+}
+.register .register-form h5{
+   font-size: 18px;
+   font-weight: 900;
+   color: #3d1101;
+   width: 100%;
+}
+.register .register-form .register-terms {
+    width: 40%;
+    text-align: left;
+}
+.register .register-form .register-input {
+    width: 40%;
+    text-align: right;
+}
+.register .register-form .register-mail, .register-password, .register-password-check {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    position: relative;
+    margin-top: 12px;
+}
+.register .register-form .register-mail .email, .register-password .password, .register-password-check .password {
+    padding: 6px 0px 6px 24px;
+    border-radius: 3px;
+    border: none;
+}
+.register .register-form .register-mail label, .register-password label {
+    font-size: 16px;
+    color: #3d1101;
+}
+.register .register-form .register-mail i, .register-password i, .register-password-check i {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    color: rgba(61,17,0,0.50);
+}
+.register .register-form .register-forgive{
+    text-align: left;
+}
+.register .register-form .register-forgive a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #ff5e45;
+}
+.register .register-form .register-forgive a:hover{
+    color: #3d1101;
+}
+.register .register-form .register-button {
+    margin-top: 12px;
+}
+.register .register-form .register-button input {
+    font-size: 14px;
+    color: #fff;
+    border-radius: 3px;
+    border: none;
+}
+.register .register-form .register-button input[type=submit] {
+    background-color: #ff5e45;
+    padding: 6px 48px;
 }
 /* FOOTER */
 .footer {

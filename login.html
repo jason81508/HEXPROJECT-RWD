@@ -14,8 +14,8 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="jason81508.github.io/HEXPROJECT-RWD/">
     <!-- <meta property="og:image" content=""> -->
-    <meta property="og:site_name" content="JasonGuo ｜ 個人履歷">
-    <title>六角西餐廳 ｜ 首頁</title>
+    <meta property="og:site_name" content="六角西餐廳 ｜ 會員登入">
+    <title>六角西餐廳 ｜ 會員登入</title>
     <!-- css File -->
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="css/reset.css">
@@ -27,17 +27,86 @@
     <div class="main-container">
         <!-- Header Star -->
         <div class="header">
-
+            <div class="logo">
+                <h1><a href="index.html">六角西餐廳/<a></h1>
+            </div>
+            <ul class="nav-toggler">
+                <span></span>
+            </ul>
+            <ul class="nav">
+                <li><a href="#future"><i class="fa-solid fa-star"></i> 特色</a></li>
+                <li><a href="#chef"><i class="fa fa-user"></i> 主廚</a></li>
+                <li><a href="#contact"><i class="fa-solid fa-map"></i> 地圖</a></li>
+                <li><a href="order_cart.html"><i class="fa fa-briefcase"></i> 線上訂購</a></li>
+                <li><a href="login.html"><i class="fa fa-comments"></i> 會員登入</a></li>
+            </ul>
+        </div>
+        <div class="banner">
+            <div class="banner-img"><img src="images/header_desktop.png" alt=""></div>
+            <div class="banner-info">
+                <h2>咬一口就無法忘懷的漢堡</h2>
+                <p>七夕絕對無法錯過的好滋味<br><i class="fa-solid fa-drumstick-bite"></i>六角大漢堡<i class="fa-solid fa-pizza-slice"></i></p>
+            </div>
         </div>
         <!-- Header End -->
         <!-- Content Star -->
-        <div class="content">
-
+        <div class="content-wrap">
+            <!-- Login Star -->
+            <section class="login">
+                <div class="row">
+                    <div class="login-title">
+                        <h3>六角西餐廳</h3>
+                        <h4>享受美食好味道</h4>
+                        <form class="login-form">
+                            <h5>LOGIN</h5>
+                            <div class="login-mail">
+                                <label for="email">Email Address*</label>
+                                <input type="email" name="mail" id="email" class="email">
+                                <i class="fa fa-envelope"></i>
+                            </div>
+                            <div class="login-password">
+                                <label for="password">Password*</label>
+                                <input type="password" name="password" id="password" class="password">
+                                <i class="fa fa-lock"></i>
+                            </div>
+                            <div class="login-forgive">
+                                <a href="#">忘記密碼?</a>
+                            </div>
+                            <div class="login-button">
+                                <input type="button" class="register" value="註冊">
+                                <input type="submit" class="submit" value="登入">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <!-- Login Star -->
         </div>
         <!-- Content End -->
         <!-- Footer Star -->
         <div class="footer">
-            
+            <div class="footer-sitemap">
+                <div class="about-us">
+                    <h4>關於 六角西餐廳</h4>
+                    <p>Curabitur lobortis id lorem id bibndum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. </p>
+                </div>
+                <div class="contact-us">
+                    <h4>聯絡方式</h4>
+                    <ul>
+                        <li><a href="https://www.google.com.tw/maps/@23.546162,120.6402133,8z?hl=zh-TW">高雄市中正五路到底</a></li>
+                        <li><a href="tel:+886 886 88">+886 886 88</a></li>
+                        <li><a href="mailto:service@hexschool.com">service@hexschool.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-logo">
+                <h3><a href="index.html">六角西餐廳</a></h3>
+                <ul class="footer-social">
+                    <li><a href="https://www.google.com/" target="_blank" class="google"><i class="fa-brands fa-google-plus-square"></i></a></li>
+                    <li><a href="https://twitter.com/" target="_blank" class="twitter"><i class="fa-brands fa-twitter-square"></i></a></li>
+                    <li><a href="https://www.facebook.com/" target="_blank" class="facebook"><i class="fa-brands fa-facebook-square"></i></a></li>  
+                </ul>
+            </div>
         </div>
         <!-- Footer Star -->  
     </div>
