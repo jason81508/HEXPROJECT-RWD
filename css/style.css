@@ -563,13 +563,15 @@ body {
 .login .login-form .login-button {
     margin-top: 12px;
 }
-.login .login-form .login-button input {
+.login .login-form .login-button input, a {
     font-size: 14px;
     color: #fff;
     border-radius: 3px;
     border: none;
+    cursor: pointer;
 }
-.login .login-form .login-button input[type=button] {
+.login .login-form .login-button a {
+    text-decoration: none;
     background-color: rgba(0,0,0,0.35);
     padding: 6px 48px;
     margin-right: 20px;
@@ -673,6 +675,7 @@ body {
 .register .register-form .register-button input[type=submit] {
     background-color: #ff5e45;
     padding: 6px 48px;
+    cursor: pointer;
 }
 /* FOOTER */
 .footer {
