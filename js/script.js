@@ -1,3 +1,10 @@
+// heart change
+$(document).ready(function () {
+  $(".heart").click(function (e) { 
+      e.preventDefault();
+      $(".heart i").toggleClass("fas");
+  });
+});
 // nav toggle
 $(document).ready(function() {
     $('.nav-toggler').on('click',  function(e){
@@ -6,10 +13,3 @@ $(document).ready(function() {
    });
  });
 
-//  text typing
-var typed = new Typed(".new-type",{
-  strings:["","Web Designer","Web Developer","Graphic Designer"],
-  typeSpeed:100,
-  BackSpeed:60,
-  loop:true
-})
