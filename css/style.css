@@ -979,6 +979,7 @@ body {
     }
     .order-cart .order-list .list-title .list-buy {
         position: fixed;
+        bottom: 50px;
         right: -10px;
         z-index: 100;
     }
